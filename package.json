@@ -1,0 +1,42 @@
+{
+  "name": "EWM",
+  "version": "1.0.0",
+  "description": "EWM page",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "author": "AK",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.25.0",
+    "exports-loader": "^0.6.3",
+    "file-loader": "^0.9.0",
+    "image-webpack-loader": "^3.0.0",
+    "imports-loader": "^0.6.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "google-map-react": "^0.23.0",
+    "react": "^15.3.2",
+    "react-burger-menu": "^1.10.14",
+    "react-dom": "^15.3.2"
+  }
+}

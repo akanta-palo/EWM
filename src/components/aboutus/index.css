@@ -1,0 +1,111 @@
+strong {
+  font-weight: 700;
+}
+
+.main {
+  position: relative;
+  height: 80%;
+}
+
+.bg {
+  position: absolute;
+  /* Set rules to fill background */
+  min-height: 32.5em;
+  /* Set up proportionate scaling */
+  width: 100%;
+  max-height: 58em;
+  opacity: 0.8;
+}
+
+.marquee_text {
+  position: relative;
+  color: white;
+  padding: 5em;
+}
+
+.marquee_text .centered {
+  width: 66.7%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 5.5em;
+  line-height: 2em;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  width: 70.00%;
+  background: white;
+  margin: 0 auto;
+  top: 7.5em;
+}
+
+.content {
+  text-align: left;
+}
+
+.content_area {
+  padding: 3em;
+}
+
+.content_area h4 {
+  margin-bottom: 2em;
+  font-size: 2.8em;
+}
+
+.content_area p {
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: 1.8em;
+}
+
+@media only screen and (max-width: 1080px)  {
+  .inner {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 900px)  {
+  .marquee_text .centered {
+    font-size: 4.5em;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .main{
+    height: 78%;
+    overflow-y: scroll;
+  }
+
+  .marquee_text .centered {
+    font-size: 3.5em;
+  }
+
+  .content_area h4 {
+    font-size: 2em;
+  }
+
+  .content_area p {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 414px)  {
+  .main {
+    height: 75%;
+  }
+  .marquee_text .centered {
+    font-size: 2em;
+  }
+
+  .content_area h4 {
+    font-size: 1.6em;
+  }
+
+  .content_area p {
+    font-size: 1.2em;
+  }
+}

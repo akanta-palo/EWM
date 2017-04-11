@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  padding: 2em 5em;
+  box-sizing: border-box;
+  background: #F5BB33;
+  justify-content: space-around;
+  height: 20%;
+}
+
+.main div {
+  flex: 0 0 200px;
+}
+
+h2 {
+  font-size: 2.4em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.6em;
+  line-height: 1.4em;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  color: rgba(247,247,247,0.98)
+}
+
+strong {
+  color: rgba(0,0,0,0.9)
+}
+
+@media only screen and (max-width: 768px)  {
+  .main {
+    padding: 2em 5em;
+  }
+}
+
+@media only screen and (max-width: 414px)  {
+  .main {
+    padding: 1em;
+    height: 30%;
+  }
+  .main div {
+    flex: 1 0 120px;
+    padding: 1em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h4 {
+    font-size: 1.4em;
+    line-height: 1em;
+  }
+
+  a {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 350px)  {
+  .main {
+    height: 40%;
+  }
+}
